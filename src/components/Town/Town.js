@@ -22,6 +22,7 @@ class Town extends Component {
     weather = () => {
         axios.get(weatherApi)
             .then((res) => {
+                console.log(res)
                 console.log(res.data.main.temp)
                 let temp = res.data.main.temp
                 let cTemp = parseInt(temp - 273)
@@ -42,7 +43,7 @@ class Town extends Component {
             weatherImage = 'assets/sunny.png'
         }
         return (<div className="weatherIconContainer">
-            <img className="weatherIcon" src={weatherImage} />
+            <img className="weatherIcon" src={weatherImage} alt='weatherIcon' />
         </div>)
     }
 
@@ -62,11 +63,10 @@ class Town extends Component {
     render() {
         return (
             <div className="Town">
-                <img className="halifax" src='halifax.jpg' />
+                <img className="halifax" src='halifax.jpg' alt='halifax' />
                 <h2>I live in Halifax, Nova Scotia</h2>
                 <div className="temperature"> {this.weatherIcon()} <font>{this.state.temperature} °{this.state.unit}</font></div>
                 <div><button onClick={() => { this.toggle('C') }} disabled={this.state.unit === 'C'}>To Celcius </button><button onClick={() => { this.toggle('F') }} disabled={this.state.unit === 'F'}>To Farenhiet </button></div>
-
             </div>
         );
     }
