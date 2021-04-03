@@ -54,7 +54,6 @@ class Town extends Component {
             this.setState({ temperature: temperature.toFixed(), unit: 'F' })
         } else {
             // F -> C
-            temperature = (temperature - 32) * (5 / 9)
             this.setState({ temperature: temperature.toFixed(), unit: 'C' })
         }
 
