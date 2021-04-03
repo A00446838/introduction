@@ -1,0 +1,1 @@
+export const weatherApi = 'http://api.openweathermap.org/data/2.5/weather?q=Halifax&appid=64021bde9cafb24bbcff4d7093709eb9'

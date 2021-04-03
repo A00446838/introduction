@@ -1,0 +1,17 @@
+.halifax {
+    margin-top: 3%;
+    width: 50%;
+    border: solid 1px;
+}
+
+.weatherIcon {
+    width: 25%
+}
+
+.temperature {
+    display: inline-flex;
+}
+
+.weatherIconContainer {
+    align-self: center;
+}
