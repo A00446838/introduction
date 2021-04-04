@@ -1,1 +1,1 @@
-export const weatherApi = 'http://api.openweathermap.org/data/2.5/weather?q=Halifax&appid=146e31ab4838b9bf457e3f628372fe6e'
+export const weatherApi = 'https://api.openweathermap.org/data/2.5/weather?q=Halifax&appid=146e31ab4838b9bf457e3f628372fe6e'
